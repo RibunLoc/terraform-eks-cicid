@@ -17,7 +17,7 @@ pipeline{
             steps {
                 script {
                     dir('tf-aws-eks'){
-                        sh 'terraform init -reconfigure'
+                        sh 'terraform init'
                     }
                 }
             }
